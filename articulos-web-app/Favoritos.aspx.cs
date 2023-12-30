@@ -68,7 +68,7 @@ namespace articulos_web_app
             int idUser = user.Id;
 
             negocio.eliminarFavorito(idUser, idArticulo);
-            Session.Add("", "Se eliminó el articulo de los favoritos.");
+            Session.Add("Articulo eliminado", "Se eliminó el articulo de los favoritos.");
             Response.Redirect("~/Favoritos.aspx", false);
 
             Page_Load(sender, e);
